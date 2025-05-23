@@ -96,3 +96,5 @@ document.getElementById("showBtn").addEventListener("click", function() {
     result.textContent = "MBTI를 선택해주세요!";
   }
 });
+
+});
