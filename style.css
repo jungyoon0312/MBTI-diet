@@ -23,13 +23,26 @@ button {
 button:hover {
   background: #5e35b1;
 }
-.result {
+.result-container {
   margin-top: 30px;
-  font-size: 1.1rem;
-  min-height: 40px;
-  padding: 10px;
-  background: #ede7f6;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(126,87,194,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-
+.tip-box, .reason-box {
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(126,87,194,0.08);
+  min-height: 40px;
+}
+.tip-box {
+  background: #ede7f6;
+  border-left: 6px solid #7e57c2;
+  text-align: left;
+}
+.reason-box {
+  background: #fffde7;
+  border-left: 6px solid #ffd54f;
+  text-align: left;
+}
