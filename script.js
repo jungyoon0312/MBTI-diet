@@ -78,3 +78,4 @@ document.getElementById("showBtn").addEventListener("click", function() {
     reasonBox.textContent = "MBTI를 선택해주세요!";
   }
 });
+
