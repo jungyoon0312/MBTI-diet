@@ -53,7 +53,7 @@ const mbtiData = {
   },
   ISFP: {
     tip: "자연과 함께하는 활동이 잘 맞아요.",
-    reason: "감각적이고 자유로운 ISFP는 자연 속에서 활동할 때 스트레스가 줄어요."
+    reason: "감각적이고 자유로운 ISFP는 자연 속에서 활동할 때 스트레스를 줄어요."
   },
   ESTP: {
     tip: "즉각적인 변화를 느낄 수 있는 HIIT 운동 추천!",
@@ -67,12 +67,14 @@ const mbtiData = {
 
 document.getElementById("showBtn").addEventListener("click", function() {
   const mbti = document.getElementById("mbti").value;
-  const result = document.getElementById("result");
+  const tipBox = document.getElementById("tipBox");
+  const reasonBox = document.getElementById("reasonBox");
 
   if (mbtiData[mbti]) {
-    result.innerHTML = `<strong>다이어트 팁:</strong> ${mbtiData[mbti].tip}<br>
-                        <strong>이유:</strong> ${mbtiData[mbti].reason}`;
+    tipBox.innerHTML = `<strong>다이어트 팁:</strong> ${mbtiData[mbti].tip}`;
+    reasonBox.innerHTML = `<strong>이유:</strong> ${mbtiData[mbti].reason}`;
   } else {
-    result.textContent = "MBTI를 선택해주세요!";
+    tipBox.textContent = "";
+    reasonBox.textContent = "MBTI를 선택해주세요!";
   }
 });
