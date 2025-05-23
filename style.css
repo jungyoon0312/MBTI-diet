@@ -47,11 +47,5 @@ button:hover {
   text-align: left;
 }
 
-.img-box {
-  margin-top: 10px;
-  min-height: 100px;
-}
-.img-box img {
-  border-radius: 16px;
   box-shadow: 0 2px 8px rgba(126,87,194,0.10);
 }
