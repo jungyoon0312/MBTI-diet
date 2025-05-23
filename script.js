@@ -80,3 +80,22 @@ const mbtiData = {
     exercise: "댄스, 볼링, 팀 스포츠"
   }
 };
+
+
+
+document.getElementById("showBtn").addEventListener("click", function() {
+  const mbti = document.getElementById("mbti").value;
+  const tipBox = document.getElementById("tipBox");
+  const reasonBox = document.getElementById("reasonBox");
+  const exerciseBox = document.getElementById("exerciseBox");
+
+  if (mbtiData[mbti]) {
+    tipBox.innerHTML = `<strong>다이어트 팁:</strong> ${mbtiData[mbti].tip}`;
+    reasonBox.innerHTML = `<strong>이유:</strong> ${mbtiData[mbti].reason}`;
+    exerciseBox.innerHTML = `<strong>추천 운동:</strong> ${mbtiData[mbti].exercise}`;
+  } else {
+    tipBox.textContent = "";
+    reasonBox.textContent = "MBTI를 선택해주세요!";
+    exerciseBox.textContent = "";
+  }
+});
