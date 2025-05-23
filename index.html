@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MBTI 다이어트 추천</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>당신의 MBTI는?</h1>
-  <p>MBTI에 따라 다이어트 전략이 달라져요!</p>
+  <h1>MBTI 다이어트 추천</h1>
+  <p>당신의 MBTI는?</p>
+  <select id="mbti">
+    <option value="">선택하세요</option>
+    <option value="INTJ">INTJ</option>
+    <option value="INFP">INFP</option>
+    <option value="ENTP">ENTP</option>
+    <option value="ESFP">ESFP</option>
+    <!-- 필요한 만큼 추가 가능 -->
+  </select>
+  <br />
+  <button id="showBtn">추천 보기</button>
+  <div class="result" id="result"></div>
+  <script src="script.js"></script>
 </body>
 </html>
