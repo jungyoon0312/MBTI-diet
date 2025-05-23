@@ -83,3 +83,20 @@ button:hover {
     padding: 10px 8px;
   }
 }
+
+.exercise-box {
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(126,87,194,0.10);
+  min-height: 40px;
+  text-align: left;
+  background: #e3f2fd;
+  border-left: 6px solid #42a5f5;
+}
+@media (max-width: 500px) {
+  .exercise-box {
+    font-size: 1rem;
+    padding: 10px 8px;
+  }
+}
