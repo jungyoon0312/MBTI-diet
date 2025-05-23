@@ -89,8 +89,9 @@ document.getElementById("showBtn").addEventListener("click", function() {
   const mbti = document.getElementById("mbti").value;
   const result = document.getElementById("result");
 
-  if (tips[mbti]) {
-    result.textContent = tips[mbti];
+  if (mbtiData[mbti]) {
+    result.innerHTML = `<strong>다이어트 팁:</strong> ${mbtiData[mbti].tip}<br>
+                        <strong>이유:</strong> ${mbtiData[mbti].reason}`;
   } else {
     result.textContent = "MBTI를 선택해주세요!";
   }
