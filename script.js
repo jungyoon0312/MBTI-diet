@@ -18,6 +18,7 @@ const tips = {
 };
 
 
+
 document.getElementById("showBtn").addEventListener("click", function() {
   const mbti = document.getElementById("mbti").value;
   const result = document.getElementById("result");
